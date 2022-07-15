@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Enter" id="BYZ-38-t0r" customClass="ViewController" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="23.-California_1" translatesAutoresizingMaskIntoConstraints="NO" id="ftT-9h-Xse">
+                                <rect key="frame" x="0.0" y="-36" width="414" height="958"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq7-79-fWR">
+                                <rect key="frame" x="0.0" y="33" width="360" height="437"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GUESS THE ARTIST">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2pN-PM-KdZ" kind="show" id="l7r-4e-6ss"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="a l e x i a  b o d e t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHP-kQ-8bV">
+                                <rect key="frame" x="23" y="478" width="315" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ftT-9h-Xse" secondAttribute="trailing" id="5NQ-v8-0tV"/>
+                            <constraint firstItem="ftT-9h-Xse" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-80" id="Fcm-PF-SVP"/>
+                            <constraint firstItem="ftT-9h-Xse" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ff9-i6-mtk"/>
+                            <constraint firstItem="ftT-9h-Xse" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="80" id="poN-0u-VUD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2fE-JI-0qj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+        <!--QuestionOne-->
+        <scene sceneID="fJw-tU-w0f">
+            <objects>
+                <viewController title="QuestionOne" id="2pN-PM-KdZ" customClass="QuestionOne" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBz-bZ-viS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="35.-Ronchi" translatesAutoresizingMaskIntoConstraints="NO" id="lWq-op-hgs">
+                                <rect key="frame" x="0.0" y="-36" width="414" height="958"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ab67616d0000b2739b791593e61e77e9a1c092fa" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-Ls-grD">
+                                <rect key="frame" x="-115" y="98" width="647" height="344"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7g-21-Kdt">
+                                <rect key="frame" x="123" y="534" width="168" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Steve Lacy">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="TY6-ex-jz1" kind="show" id="42w-Iw-eas"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX3-bj-ge2">
+                                <rect key="frame" x="111" y="597" width="195" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Frank Ocean">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3JR-BW-bZS" kind="show" id="vYA-EI-Pbk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqc-pt-g5y">
+                                <rect key="frame" x="114" y="660" width="188" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Internet">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="3JR-BW-bZS" kind="show" id="NbN-xy-gYe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNB-GS-O2D">
+                                <rect key="frame" x="11" y="479" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VqR-M0-PLL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lWq-op-hgs" firstAttribute="top" secondItem="rBz-bZ-viS" secondAttribute="topMargin" constant="-80" id="8Yy-cb-4Es"/>
+                            <constraint firstItem="lWq-op-hgs" firstAttribute="leading" secondItem="VqR-M0-PLL" secondAttribute="leading" id="lrp-wR-Fu4"/>
+                            <constraint firstItem="VqR-M0-PLL" firstAttribute="bottom" secondItem="lWq-op-hgs" secondAttribute="bottom" constant="-80" id="noC-ze-8A4"/>
+                            <constraint firstItem="VqR-M0-PLL" firstAttribute="trailing" secondItem="lWq-op-hgs" secondAttribute="trailing" id="oTk-nb-YcM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HhZ-QA-kjy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ft-Ed-EFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="69.642857142857139"/>
+        </scene>
+        <!--WrongTitle-->
+        <scene sceneID="pb4-63-aWX">
+            <objects>
+                <viewController title="WrongTitle" id="3JR-BW-bZS" customClass="WrongTitle" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bu2-2W-hYv" customClass="wrong">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="4NE-Ow-u0L">
+                                <rect key="frame" x="0.0" y="-56" width="414" height="978"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3d-HA-EHJ">
+                                <rect key="frame" x="40" y="264" width="311" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047979797978" green="0.39721219418534154" blue="0.33867015610285289" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2pN-PM-KdZ" kind="show" id="N1b-py-a6H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7MG-fG-TN9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4NE-Ow-u0L" firstAttribute="top" secondItem="7MG-fG-TN9" secondAttribute="top" constant="-100" id="Pib-95-apd"/>
+                            <constraint firstItem="7MG-fG-TN9" firstAttribute="trailing" secondItem="4NE-Ow-u0L" secondAttribute="trailing" id="bPu-UO-rDZ"/>
+                            <constraint firstItem="7MG-fG-TN9" firstAttribute="bottom" secondItem="4NE-Ow-u0L" secondAttribute="bottom" constant="-80" id="l8m-6p-BbZ"/>
+                            <constraint firstItem="4NE-Ow-u0L" firstAttribute="leading" secondItem="7MG-fG-TN9" secondAttribute="leading" id="uk4-Rk-Bru"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MUp-Sz-zOx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jt7-ne-RuY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931.8840579710147" y="-92.410714285714278"/>
+        </scene>
+        <!--QuestionTwo-->
+        <scene sceneID="bqV-Gs-v76">
+            <objects>
+                <viewController title="QuestionTwo" id="TY6-ex-jz1" customClass="QuestionTwo" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pot-zx-rFV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="06.-Wisteria_1" translatesAutoresizingMaskIntoConstraints="NO" id="2tq-St-2CN">
+                                <rect key="frame" x="-10" y="-56" width="424" height="998"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-hr-3E1">
+                                <rect key="frame" x="10" y="480" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUs-HT-YXd">
+                                <rect key="frame" x="10" y="-46" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s-l500" translatesAutoresizingMaskIntoConstraints="NO" id="9eP-6l-aRt">
+                                <rect key="frame" x="-128" y="93" width="670" height="357"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-p9-X9a">
+                                <rect key="frame" x="76" y="546" width="264" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Childish Gambino">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qqB-27-11t" kind="show" id="jtJ-a5-eGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25i-c1-JzW">
+                                <rect key="frame" x="151" y="609" width="117" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Miguel">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Qe5-u5-jTJ" kind="show" id="Ue6-NA-W3k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsy-oq-7dI">
+                                <rect key="frame" x="134" y="672" width="150" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The 1975">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Qe5-u5-jTJ" kind="show" id="KPS-Ky-c6j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M3I-5D-PwA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2tq-St-2CN" firstAttribute="top" secondItem="Pot-zx-rFV" secondAttribute="topMargin" constant="-100" id="Aom-54-hw8"/>
+                            <constraint firstItem="M3I-5D-PwA" firstAttribute="bottom" secondItem="2tq-St-2CN" secondAttribute="bottom" constant="-100" id="Gdp-jR-b9K"/>
+                            <constraint firstItem="M3I-5D-PwA" firstAttribute="trailing" secondItem="2tq-St-2CN" secondAttribute="trailing" id="xeZ-2t-3Zf"/>
+                            <constraint firstItem="2tq-St-2CN" firstAttribute="leading" secondItem="M3I-5D-PwA" secondAttribute="leading" constant="-10" id="ydT-36-NFv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zw0-6S-MpL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vd9-ji-jHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830.434782608696" y="95.758928571428569"/>
+        </scene>
+        <!--WrongTwo-->
+        <scene sceneID="Dz7-Od-3Zo">
+            <objects>
+                <viewController title="WrongTwo" id="Qe5-u5-jTJ" customClass="WrongTwo" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeS-ZT-uwG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="hI8-kQ-xkh">
+                                <rect key="frame" x="0.0" y="-45" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDO-w6-K0f">
+                                <rect key="frame" x="20" y="233" width="293" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="TY6-ex-jz1" kind="show" id="NVU-Um-Mtv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zDr-eO-K4I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l8i-Oi-CvH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYJ-KQ-kj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3702.898550724638" y="-65.625"/>
+        </scene>
+        <!--QuestionThree-->
+        <scene sceneID="iCV-oJ-4gI">
+            <objects>
+                <viewController title="QuestionThree" id="qqB-27-11t" customClass="QuestionThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="pKv-TT-XaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="40.-Cherokee_1" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-PV-HiX">
+                                <rect key="frame" x="0.0" y="-56" width="414" height="998"/>
+                                <color key="backgroundColor" red="0.94509804249999996" green="0.63529413940000001" blue="0.31372550129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.94509804249999996" green="0.63529413940000001" blue="0.31372550129999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="91eMyF70YUL._SL1500_" translatesAutoresizingMaskIntoConstraints="NO" id="4Vj-wR-Ogh">
+                                <rect key="frame" x="-135" y="84" width="685" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhS-rk-pUm">
+                                <rect key="frame" x="75" y="528" width="271" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.77647060160000003" green="0.73725497719999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Thee Sacred Souls">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Jey-YT-Kf7" kind="show" id="nk0-LA-MiU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEI-MI-Ydg">
+                                <rect key="frame" x="104" y="591" width="212" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.77647060160000003" green="0.73725497719999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mac DeMarco">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QBh-fe-SRS" kind="show" id="sCg-rb-VGI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C8-rh-P37">
+                                <rect key="frame" x="126" y="654" width="163" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.77647060160000003" green="0.73725497719999999" blue="0.33725491169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mac Ayres">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Jey-YT-Kf7" kind="show" id="vxi-o1-dY5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-BW-4ys">
+                                <rect key="frame" x="10" y="473" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" red="0.77582465277777779" green="0.73539855116098873" blue="0.33720572846539348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nqw-Fl-1RS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nqw-Fl-1RS" firstAttribute="trailing" secondItem="XSg-PV-HiX" secondAttribute="trailing" id="SHc-TF-1o7"/>
+                            <constraint firstItem="nqw-Fl-1RS" firstAttribute="bottom" secondItem="XSg-PV-HiX" secondAttribute="bottom" constant="-100" id="Vb6-vK-eFb"/>
+                            <constraint firstItem="XSg-PV-HiX" firstAttribute="leading" secondItem="nqw-Fl-1RS" secondAttribute="leading" id="clZ-ww-saU"/>
+                            <constraint firstItem="XSg-PV-HiX" firstAttribute="top" secondItem="pKv-TT-XaQ" secondAttribute="topMargin" constant="-100" id="nPc-vJ-25H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="457-8r-16J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3x-lu-0O3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4598.5507246376819" y="109.82142857142857"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="gwz-UZ-Kw8">
+            <objects>
+                <viewController title="WrongThree" id="Jey-YT-Kf7" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bp6-jQ-gFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="jfM-eU-fuj">
+                                <rect key="frame" x="0.0" y="-68" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZA-eM-N1c">
+                                <rect key="frame" x="20" y="242" width="315" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="qqB-27-11t" kind="show" id="Fk2-Ma-3jA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6u2-Bn-1ta"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQ2-mj-3do"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvc-YQ-rca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5515.9420289855079" y="-67.633928571428569"/>
+        </scene>
+        <!--QuestionFour-->
+        <scene sceneID="eKX-6P-rgs">
+            <objects>
+                <viewController title="QuestionFour" id="QBh-fe-SRS" customClass="QuestionFour" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wl1-qj-jsA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="08.-Violet-Blue" translatesAutoresizingMaskIntoConstraints="NO" id="3vd-s5-f5c">
+                                <rect key="frame" x="0.0" y="-41" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOj-cw-gVK">
+                                <rect key="frame" x="10" y="490" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="R-1695770-1238938465" translatesAutoresizingMaskIntoConstraints="NO" id="rZN-kG-fMp">
+                                <rect key="frame" x="-135" y="101" width="685" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvv-yI-P9B">
+                                <rect key="frame" x="126" y="545" width="163" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pink Floyd">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6OL-qm-zDm" kind="show" id="53h-nr-IgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Od-bh-PE2">
+                                <rect key="frame" x="126" y="608" width="163" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Killers">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6OL-qm-zDm" kind="show" id="0tF-Qg-khO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unP-3R-T1j">
+                                <rect key="frame" x="136" y="671" width="144" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Coldplay">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="17P-Ym-oEr" kind="show" id="in1-so-65q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kzQ-qc-GWf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xAf-Uh-9Rb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aD9-pA-1xY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6343" y="135"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="OGz-V7-8QB">
+            <objects>
+                <viewController title="WrongThree" id="3E9-2v-LOR" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EsY-OH-45U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="B8M-1Q-sDp">
+                                <rect key="frame" x="0.0" y="-68" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF1-or-k0W">
+                                <rect key="frame" x="20" y="242" width="315" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ctb-y7-6SI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="amf-VP-QL3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfg-oN-Jgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5515.9420289855079" y="-67.633928571428569"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="Bd8-vB-r9v">
+            <objects>
+                <viewController title="WrongThree" id="6OL-qm-zDm" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z8h-fw-UE2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="FE3-ui-BAD">
+                                <rect key="frame" x="0.0" y="-68" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tp-NC-PXG">
+                                <rect key="frame" x="20" y="242" width="315" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="QBh-fe-SRS" kind="show" id="jvr-Cv-R6i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YRj-lF-nkT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M3A-NP-OqO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MxH-bJ-YUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7099" y="-54"/>
+        </scene>
+        <!--QuestionFour-->
+        <scene sceneID="3YB-6f-h64">
+            <objects>
+                <viewController title="QuestionFour" id="17P-Ym-oEr" customClass="QuestionFour" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y5e-Y3-bss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="50.-Columbia-Blue" translatesAutoresizingMaskIntoConstraints="NO" id="V3H-BV-iT5">
+                                <rect key="frame" x="0.0" y="-41" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaU-jm-E5d">
+                                <rect key="frame" x="10" y="490" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ab67616d0000b2736fc944ef0967cf846c7539d6" translatesAutoresizingMaskIntoConstraints="NO" id="841-bS-LM4">
+                                <rect key="frame" x="-135" y="101" width="685" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jef-E4-gr1">
+                                <rect key="frame" x="121" y="545" width="173" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Nicki Minaj">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gSV-AR-bOE" kind="show" id="Hvg-hK-SNU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kma-pe-j3z">
+                                <rect key="frame" x="112" y="608" width="191" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Zara Larsson">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="azs-b2-U3Y" kind="show" id="2WA-HD-XFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whg-qO-6uT">
+                                <rect key="frame" x="137" y="671" width="142" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Doja Cat">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="azs-b2-U3Y" kind="show" id="Ivs-WV-Wmg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K4p-03-8cd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pbq-4i-fht"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8k-7A-Qno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7894" y="135"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="sl9-kS-qKe">
+            <objects>
+                <viewController title="WrongThree" id="azs-b2-U3Y" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wFd-6D-S2O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="we4-an-AYD">
+                                <rect key="frame" x="0.0" y="-68" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bM-5H-MHV">
+                                <rect key="frame" x="20" y="242" width="315" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="17P-Ym-oEr" kind="show" id="n5V-Gg-igp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fRM-6G-KwM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pAs-qR-AHF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvz-Ys-qcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8696" y="-54"/>
+        </scene>
+        <!--QuestionFour-->
+        <scene sceneID="KvH-7S-aLu">
+            <objects>
+                <viewController title="QuestionFour" id="gSV-AR-bOE" customClass="QuestionFour" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TVJ-lS-PW8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="32.-Banana-Mania" translatesAutoresizingMaskIntoConstraints="NO" id="7w0-PE-M9F">
+                                <rect key="frame" x="0.0" y="-41" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who Made This Album?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StN-bd-N8d">
+                                <rect key="frame" x="10" y="490" width="395" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2425883" translatesAutoresizingMaskIntoConstraints="NO" id="NMx-fh-lLH">
+                                <rect key="frame" x="-135" y="101" width="685" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAA-hh-Ebl">
+                                <rect key="frame" x="32" y="545" width="352" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Velvet Underground">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="o7u-9A-lGO" kind="show" id="7hi-lj-gwy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvs-hX-fWp">
+                                <rect key="frame" x="102" y="608" width="213" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tears For Fear">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="o7u-9A-lGO" kind="show" id="rxC-uX-coP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dN-tk-X4w">
+                                <rect key="frame" x="135" y="671" width="147" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="The Cure">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mIG-rd-8se" kind="show" id="Cwb-iQ-vUp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gvf-4Q-gMc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TFW-bX-m04"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZZ-Fn-XaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9509" y="135"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="iUy-s1-dea">
+            <objects>
+                <viewController title="WrongThree" id="o7u-9A-lGO" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUk-H5-drt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="81.-Kobi_1" translatesAutoresizingMaskIntoConstraints="NO" id="RRV-sb-Qun">
+                                <rect key="frame" x="0.0" y="-68" width="414" height="978"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-Ae-SK6">
+                                <rect key="frame" x="20" y="242" width="315" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.76886047980000005" green="0.39721219419999998" blue="0.33867015610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try Again . . .">
+                                    <fontDescription key="titleFontDescription" name="Didot-Italic" family="Didot" pointSize="100"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eri-D6-zyt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CPp-kp-y9H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUN-CE-kGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10370" y="-54"/>
+        </scene>
+        <!--WrongThree-->
+        <scene sceneID="6Gw-ct-BiF">
+            <objects>
+                <viewController title="WrongThree" id="mIG-rd-8se" customClass="WrongThree" customModule="GuessTheAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nsV-A4-KEm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="OfS-cU-ygf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="922"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEG-5a-UjB">
+                                <rect key="frame" x="49" y="717" width="317" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Return" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Futura-MediumItalic" family="Futura" pointSize="100"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rNG-zD-VoI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Y O U" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6x-b4-GqP">
+                                <rect key="frame" x="49" y="130" width="325" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="W I N" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL1-DU-xKD">
+                                <rect key="frame" x="41" y="271" width="325" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fuC-aK-wnY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OfS-cU-ygf" firstAttribute="top" secondItem="nsV-A4-KEm" secondAttribute="top" id="51d-w8-AQP"/>
+                            <constraint firstItem="OfS-cU-ygf" firstAttribute="trailing" secondItem="fuC-aK-wnY" secondAttribute="trailing" id="Ivw-WH-PKB"/>
+                            <constraint firstAttribute="bottom" secondItem="OfS-cU-ygf" secondAttribute="bottom" constant="-80" id="k9F-y7-ZRP"/>
+                            <constraint firstItem="OfS-cU-ygf" firstAttribute="leading" secondItem="fuC-aK-wnY" secondAttribute="leading" id="lUi-2Q-xKX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tke-da-khv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4M-wi-UrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11198.550724637682" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7hi-lj-gwy"/>
+        <segue reference="Ivs-WV-Wmg"/>
+        <segue reference="n5V-Gg-igp"/>
+        <segue reference="0tF-Qg-khO"/>
+        <segue reference="jvr-Cv-R6i"/>
+        <segue reference="vxi-o1-dY5"/>
+        <segue reference="jtJ-a5-eGw"/>
+        <segue reference="Ue6-NA-W3k"/>
+        <segue reference="42w-Iw-eas"/>
+        <segue reference="vYA-EI-Pbk"/>
+        <segue reference="l7r-4e-6ss"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="06.-Wisteria_1" width="4000" height="3000"/>
+        <image name="08.-Violet-Blue" width="4000" height="3000"/>
+        <image name="23.-California_1" width="4000" height="3000"/>
+        <image name="2425883" width="500" height="502"/>
+        <image name="32.-Banana-Mania" width="4000" height="3000"/>
+        <image name="35.-Ronchi" width="4000" height="3000"/>
+        <image name="40.-Cherokee_1" width="4000" height="3000"/>
+        <image name="50.-Columbia-Blue" width="4000" height="3000"/>
+        <image name="81.-Kobi_1" width="4000" height="3000"/>
+        <image name="91eMyF70YUL._SL1500_" width="1500" height="1500"/>
+        <image name="R-1695770-1238938465" width="600" height="600"/>
+        <image name="ab67616d0000b2736fc944ef0967cf846c7539d6" width="640" height="640"/>
+        <image name="ab67616d0000b2739b791593e61e77e9a1c092fa" width="640" height="640"/>
+        <image name="gradient" width="1600" height="1200"/>
+        <image name="s-l500" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
